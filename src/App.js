@@ -17,4 +17,8 @@ function App() {
   );
 }
 
+<p>
+  This was coded by{" "}
+  <a href="https://github.com/thefoxyjay/weather-react.git">Jordan Tarquino</a>
+</p>;
 export default App;

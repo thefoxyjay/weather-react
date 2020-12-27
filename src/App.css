@@ -1,5 +1,5 @@
 .App {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 60px;
   min-width: 525px;
@@ -44,7 +44,9 @@
 li {
   list-style: none;
 }
-
+footer {
+  color: lightblue;
+}
 h1 {
   font-family: "Shadows Into Light Two", cursive;
   color: #ffffff;
