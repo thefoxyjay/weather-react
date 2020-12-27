@@ -47,7 +47,7 @@ li {
 
 h1 {
   font-family: "Shadows Into Light Two", cursive;
-  color: lightblue;
+  color: #ffffff;
   text-align: center;
   padding: 5px;
   margin: 50px;
@@ -75,7 +75,7 @@ form {
 }
 
 ul {
-  color: lightblue;
+  color: #ffffff;
   display: inline-block;
   list-style: none;
   margin: 0;
