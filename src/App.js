@@ -13,12 +13,15 @@ function App() {
         <br />
         <Weather city="Tokyo" />
       </header>
-      <p>
+      <footer>
         This was coded by{" "}
-        <a href="https://github.com/thefoxyjay/weather-react.git">
+        <a
+          href="https://github.com/thefoxyjay/weather-react.git"
+          target="_blank"
+        >
           Jordan Tarquino
         </a>
-      </p>
+      </footer>
       ;
     </div>
   );
