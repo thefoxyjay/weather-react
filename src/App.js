@@ -11,13 +11,14 @@ function App() {
         <br />
         <Search />
         <br />
-        <Weather city="Tokyo" />
+        <Weather city="" />
       </header>
       <footer>
         This was coded by{" "}
         <a
           href="https://github.com/thefoxyjay/weather-react.git"
           target="_blank"
+          rel="noreferrer"
         >
           Jordan Tarquino
         </a>
