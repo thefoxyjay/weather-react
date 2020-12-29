@@ -6,24 +6,25 @@ import Search from "./Search.js";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1> How's the Weather?</h1>
-        <br />
-        <Search />
-        <br />
-        <Weather city="" />
-      </header>
-      <footer>
-        This was coded by{" "}
-        <a
-          href="https://github.com/thefoxyjay/weather-react.git"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Jordan Tarquino
-        </a>
-      </footer>
-      ;
+      <div className="container">
+        <header className="App-header">
+          <h1> How's the Weather?</h1>
+          <br />
+          <Search />
+          <br />
+          <Weather city="" />
+        </header>
+        <footer>
+          This was coded by{" "}
+          <a
+            href="https://github.com/thefoxyjay/weather-react.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Jordan Tarquino
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
