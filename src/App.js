@@ -7,13 +7,10 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <h1> How's the Weather?</h1>
-          <br />
-          <Search />
-          <br />
-          <Weather city="" />
-        </header>
+        <header> How's the Weather?</header>
+        <Search />
+        <br />
+        <Weather city="" />
         <footer>
           This was coded by{" "}
           <a

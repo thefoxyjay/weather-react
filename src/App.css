@@ -37,7 +37,7 @@ li {
 footer {
   color: lightblue;
 }
-h1 {
+header {
   font-family: "Shadows Into Light Two", cursive;
   color: #ffffff;
   text-align: center;
@@ -45,7 +45,8 @@ h1 {
   margin: 50px;
   font-size: calc(10px + 2vmin);
 }
-
+h1 {
+}
 h2 {
   color: lightblue;
   margin-bottom: 0;
@@ -65,7 +66,7 @@ form {
 }
 
 ul {
-  color: #ffffff;
+  color: #000000;
   display: inline-block;
   list-style: none;
   margin: 0;
@@ -84,7 +85,7 @@ p {
 
 .Weather {
   max-width: 900px;
-  border: solid;
+  border: 1px solid;
   padding: 10px;
   margin: 10px;
   background-color: #ffffff;
