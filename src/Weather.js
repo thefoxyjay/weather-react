@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import WeatherInfo from "./WeatherInfo.js";
+import WeatherForecast from "./WeatherForecast.js";
 import "./App.css";
+import "./Weather.css";
 import axios from "axios";
 
 export default function Weather(props) {
-  const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     setWeatherData({
@@ -28,7 +31,7 @@ export default function Weather(props) {
   }
   function search() {
     const apiKey = "c99487f69d19999bb56503b8673bc536";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
   }
@@ -52,26 +55,8 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <h1>{weatherData.city}</h1>
-        <ul>
-          <li>Thursday 09:00</li>
-          <li>{weatherData.description}</li>
-        </ul>
-        <div className="row mt-3">
-          <div className="col-6">
-            {weatherData.icon}
-            <span className="temperature">
-              {Math.round(weatherData.temperature)}
-            </span>
-            <span className="units">°F</span>
-          </div>
-          <div className="col-6">
-            <ul>
-              <li>Humidity: {weatherData.humidity}</li>
-              <li>Wind: {weatherData.wind}mph</li>
-            </ul>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
+        <WeatherForecast city={weatherData.city} />
       </div>
     );
   } else {
