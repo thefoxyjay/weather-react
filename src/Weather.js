@@ -11,13 +11,14 @@ export default function Weather() {
         <li>Wednesday 09:00</li>
         <li>Mostly Cloudy</li>
       </ul>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="Mostly Cloudy"
           />
-          6°C
+          <span className="temperature">12</span>
+          <span className="units">°C</span>
         </div>
         <div className="col-6">
           <ul>

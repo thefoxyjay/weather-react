@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Weather.css";
 import Weather from "./Weather.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Search from "./Search.js";
